@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Roupas Masculinas, Roupas Femininas | Protótipo de Loja online</title>
+		<meta name="author" content="Dary Gustavo" />
+		<link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" sizes="16x16 32x32" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<script src="https://kit.fontawesome.com/d68da1cb3a.js" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+</html>
+
+<body>
+	<!--Navbar, inclui imagem do logo-->
+<div id="tabstrip"></div>
+
+<section id="header">
+	<div style="position: fixed"></div>
+	<div id="mobile">
+		<i id="bar" class="fa-solid fa-bars"></i>
+	</div>
+	<div class="logo">
+		<a href="index.html"><img src="img/logo.jpg" class="logo-size" /></a>
+	</div>
+
+	<div>
+		<ul id="navbar">
+			<li><a class="active" href="">Início</a></li>
+			<li><a href="about.html">Sobre</a></li>
+			<li><a href="contact.html">Contato</a></li>
+			<div class="form-container">
+				<input type="text" name="text" class="input" placeholder="Buscar Produtos" />
+				<button class="search__btn">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+						<path
+							d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+							fill="#efeff1"
+						></path>
+					</svg>
+				</button>
+			</div>
+			<div class="NavCart">
+			<li>
+				<a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+			  </li>
+			<li>
+				<a href="account.html"><i class="fa-solid fa-user"></i></a>
+			</li>
+			<a id="close"><i class="fa-solid fa-xmark"></i></a>
+		</div>
+		</ul>
+	</div>
+</section>
+
+<div id="extraControls">
+	<section id="intro" class="container-fluid">
+		<h4>Promoção de Inverno</h4>
+		<h2>Ofertas de grande valor</h2>
+		<h1>Todos os produtos de roupas</h1>
+		<p>Use o cupom DARY50 para até 50% de desconto com o cupom</p>
+		<button class="button"><a href="">Comprar agora</a></button>
+	</section>
+
+
+<section id="product-section" class="section-padding">
+	<div class="section-title">
+		<h2>Produtos em Destaque</h2>
+		<p>Coleção de Inverno</p>
+	</div>
+
+	<div class="product-container">
+		<div class="product">
+			<img src="img/products/p3.jpg" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Jaqueta de Inverno</h5>
+				<h4>R$87</h4>
+			</div>
+			<a class="button" href="#" onclick="addToCart('Jaqueta de Inverno', 87, 'img/products/p3.jpg')"><i class="fa-solid fa-cart-shopping"></i></a>
+		</div>
+		<div class="product">
+			<img src="img/products/p1.jpg" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Calça</h5>
+				<h4>R$38</h4>
+			</div>
+			<a href="#" onclick="addToCart('Calça', 38, 'img/products/p1.jpg')"><i class="fa-solid fa-cart-shopping"></i></a>
+		</div>
+
+		<div class="product">
+			<img src="img/products/p4.jpg" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Jaqueta Corta Vento</h5>
+				<h4>R$99</h4>
+			</div>
+			<a href="#" onclick="addToCart('Jaqueta Corta Vento', 99, 'img/products/p4.jpg')"><i class="fa-solid fa-cart-shopping" ></i></a>
+		</div>
+
+		<div class="product">
+			<img src="img/products/p5.png" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Chapéu de Palha</h5>
+				
+				<h4>R$42</h4>
+			</div>
+			<a href="#" onclick="addToCart('Chapéu de Palha', 42, 'img/products/p5.png')"><i class="fa-solid fa-cart-shopping" ></i></a>
+		</div>
+
+		<div class="product">
+			<img src="img/products/p5.png" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Chapéu de Couro</h5>
+				
+				<h4>R$109</h4>
+			</div>
+			<a href="#" onclick="addToCart('Chapéu de Couro', 109, 'img/products/p5.png')"><i class="fa-solid fa-cart-shopping" ></i></a>
+		</div>
+
+		<div class="product">
+			<img src="img/products/p2.png" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Camiseta de Manga Curta</h5>
+				
+				<h4>R$56</h4>
+			</div>
+			<a href="#" onclick="addToCart('Camiseta de Manga Curta', 56, 'img/products/p2.png')"><i class="fa-solid fa-cart-shopping" ></i></a>
+		</div>
+
+		<div class="product">
+			<img src="img/products/p4.jpg" />
+			<div class="desc">
+				<span>Dary</span>
+				<h5>Casaco</h5>
+				
+				<h4>R$120</h4>
+			</div>
+			<a href="#" onclick="addToCart('Casaco', 120, 'img/products/p4.jpg')"><i class="fa-solid fa-cart-shopping" ></i></a>
+		</div>
+	</div>
+</section>
+
+
+		<!--Banner-->
+<section id="banner" class="parallax container-fluid">
+	<div class="banner-text">
+		<h2>Oferta</h2>
+		<h2>Até <span>80%</span> de desconto em Óculos e Acessórios selecionados</h2>
+	</div>
+
+	<button class="button"><a href="">Explorar</a></button>
+</section>
+
+
+		<!--Cartões de Benefícios-->
+<section id="feature-section" class="section-padding parallax">
+	<div class="section-title">
+		<h2>Benefícios</h2>
+	</div>
+
+	<div class="feature-container">
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f1.jpg" />
+				<h6>Pedido Online</h6>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f2.jpg" />
+				<h6>Entrega Rápida</h6>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f3.jpg" />
+				<h6>Economia de Dinheiro</h6>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f4.jpg" />
+				<h6>Promoções</h6>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f5.jpg" />
+				<h6>Frete Grátis</h6>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="desc">
+				<img src="img/features/f6.jpg" />
+				<h6>Suporte 24/7</h6>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="newsletter">
+	<div></div>
+</section>
+
+
+<footer class="section-padding">
+	<div class="container">
+		<div class="footer-col">
+			<img src="img/logo.jpg" class="logo-size" />
+			<address>
+				<h4><strong>Contato</strong></h4>
+				<p><strong>Endereço:</strong> Rua dos Agaves 530, Jardim Belo Horizonte, Sinop - MT</p>
+				<p><strong>Telefone:</strong> +55 (66) 98136-2926</p>
+				<p><strong>Horário de Funcionamento:</strong> 8:00 - 18:00, Seg-Sáb</p>
+			</address>
+			<div class="socials">
+				<h4>Nos Siga nas Redes Sociais:</h4>
+				<div class="social-icons">
+					<a href=""><i class="fa-brands fa-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-twitter"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin"></i></a>
+					<a href=""><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+		</div>
+
+		
+		
+
+		<div class="footer-col">
+			<h4><strong>Instale o App</strong></h4>
+			<p>Disponível na App Store ou Google Play</p>
+			<div class="badges">
+				<div class="introwrap small-12 medium-10 large-8 small-centered columns badges">
+					<a href="" class="badge1"><img src="img/pay/ap1.svg" alt="Baixe na App Store" /></a>
+					<a href="" class="badge2"><img src="img/pay/ap2.png" alt="Obtenha no Google Play" /></a>
+				</div>
+			</div>
+			<p><strong>Gateways de Pagamento Seguro</strong></p>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>2024, Dary - Loja online</p>
+	</div>
+</footer>
+<script src="script.js"></script>
+</body>
